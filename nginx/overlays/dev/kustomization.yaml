@@ -1,0 +1,7 @@
+namePrefix: dev-
+commonLabels:
+  tier: development
+bases:
+  - ../../base
+patches:
+  - replicas_count.yaml
