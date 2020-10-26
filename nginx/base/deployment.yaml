@@ -12,9 +12,10 @@ spec:
     metadata:
       labels:
         app: nginx
-    containers:
-      - name: nginx-container
-        image: nginx:1.19.3
-        ports:
-          - containerPort: 8080
+    spec:
+      containers:
+        - name: nginx-container
+          image: nginx:1.19.3
+          ports:
+            - containerPort: 8080
   
