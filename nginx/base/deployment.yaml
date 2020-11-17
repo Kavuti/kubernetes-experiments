@@ -17,5 +17,6 @@ spec:
         - name: nginx-container
           image: nginx:1.19.3
           ports:
-            - containerPort: 8080
+           - containerPort: 8080
+             protocol: TCP
   
