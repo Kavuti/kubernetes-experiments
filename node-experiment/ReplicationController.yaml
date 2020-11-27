@@ -3,7 +3,7 @@ kind: ReplicationController
 metadata:
   name: kubia
 spec:
-  replicas: 1
+  replicas: 2 
   selector:
     app: kubia
   template:
@@ -11,6 +11,7 @@ spec:
       name: kubia
       labels:
         app: kubia
+        tier: development
     spec:
       containers:
         - name: kubia
