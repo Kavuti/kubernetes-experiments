@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: kubia-secured
+spec:
+  selector:
+    app: kubia-secured
+  ports:
+    - port: 443
+      targetPort: 8443

@@ -6,11 +6,11 @@ spec:
   replicas: 3
   selector:
     matchLabels:
-      app: kubia1
+      app: kubia
   template:
     metadata:
       labels:
-        app: kubia1
+        app: kubia
     spec:
       containers:
         - name: kubia

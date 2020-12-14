@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: kubia-secured
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: kubia-secured
+  template:
+    metadata:
+      name: kubia-secured
+      labels:
+        app: kubia-secured
+    spec:
+      containers:
+        - name: kubia-secured
+          image: christiancavuti/kubias
+          ports:
+            - containerPort: 8443
